@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { useState } from 'react';
 import ReactDOM from 'react-dom/client';
+import './formStyle.css';
 
 export default function MyForm() {
   const initialVars = {
@@ -57,7 +58,7 @@ export default function MyForm() {
   function serverErrorHandler() {}
 
   return (
-    <form>
+    <form className={'formContainer'}>
       <label>First Name</label>
       <input type="text"></input>
       <br />
@@ -70,7 +71,7 @@ export default function MyForm() {
       <label>Gender</label>
       <select>
         <option value="Male">Male</option>
-        <option value="Female" selected>
+        <option value="Female" defaultValue>
           Female
         </option>
         <option value="Prefer not to say">Prefer not to say</option>
@@ -89,6 +90,6 @@ export default function MyForm() {
   );
 }
 
-const style = {};
+
 // const root = ReactDOM.createRoot(document.getElementById('root'));
 // root.render(<MyForm />);

@@ -1,0 +1,47 @@
+.formContainer {
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+  width: fit-content;
+  padding-left: 2.5em;
+  padding-right: 2.5em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: #a9cbff5e;
+  border-radius: 20px;
+}
+
+.inputValid {
+}
+
+.inputInvalid {
+}
+
+.submit {
+}
+
+.reset {
+}
+select {
+  border-radius: 1em;
+}
+input[type=submit]{
+  scale: 1.1;
+  margin: .5em;
+}
+input[type=reset]{
+  scale: 1.1;
+  margin: .5em;
+}
+input{
+  
+}
